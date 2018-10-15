@@ -1,0 +1,13 @@
+{
+  "pages":[
+    "pages/translate/translate"  
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#108DFB",
+    "navigationBarTitleText": "翻译小能手",
+    "navigationBarTextStyle": "white"
+  }
+  
+  
+}

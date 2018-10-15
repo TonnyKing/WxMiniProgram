@@ -1,0 +1,36 @@
+/* pages/index/translate.wxss */
+
+.traninput{
+  border: .5px solid #EDEDED;
+  height: 80px;
+  text-align: center;
+  padding: 0 0 0 80rpx;
+  margin: 50rpx auto 0;
+  width: 80%;
+}
+.traview{
+  text-align: center;
+  padding-top: 50px;
+}
+.nav{
+  margin-top: 50px;
+}
+.tranbtn{
+  width:150px;
+  margin-top: 50px;
+}
+
+.result{
+  margin-top: 80px;
+}
+
+.back{
+  width:50px;
+  height: 50px;
+}
+.picker{
+  margin-top:20px;
+  background: #FFFAFA;
+  padding: 10px;
+}
+.footer{font-size: 30rpx;text-align: center;position: fixed;bottom: 0;width: 100%;height: 60rpx;background: #108DFB;line-height: 60rpx;color: #fff;}

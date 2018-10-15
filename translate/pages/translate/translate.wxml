@@ -1,0 +1,22 @@
+<!--index.wxml-->
+
+<view class='traview'>
+  <block>
+    <!-- <text class='nav'>{{tips}}</text> -->
+   
+    <input type='text' class='traninput' placeholder='请输入你要翻译的内容' bindblur='getcontent'></input>
+    <picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
+        <!-- 选择语言 -->
+        <view class="picker" >
+          选择翻译语言：{{array[index]}}
+        </view>
+    </picker>
+    <button class='tranbtn' open-type="getUserInfo" bindgetuserinfo="translate">开始翻译</button>
+    <view class='result'>
+     <text wx:if="tranalready">{{tranresult}}</text>
+    </view>
+  </block>
+</view>
+<view class='footer'>
+此项目由叶才鑫个人开发
+</view>
