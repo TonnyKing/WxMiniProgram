@@ -1,0 +1,23 @@
+<view class="navView" bindtap="tigger" data-num="1">视图容器</view>
+<view class="classname" hidden="{{view1}}">
+ <button bindtap="opentype" data-type="view">view</button>
+ <button bindtap="opentype" data-type="movable">movable</button>
+</view>
+
+<view class="navView" bindtap="tigger" data-num="2">基础内容</view>
+<view class="classname" hidden="{{view2}}">
+<button bindtap="opentype" data-type="icon">icon</button>
+<button bindtap="opentype" data-type="text">text</button>
+<button bindtap="opentype" data-type="progress">progress</button>
+</view>
+
+<view class="navView" bindtap="tigger" data-num="3">表单组件</view>
+<view class="classname" hidden="{{view3}}">
+<button bindtap="opentype" data-type="button">button</button>
+<button bindtap="opentype" data-type="checkbox">checkbox</button>
+<button bindtap="opentype" data-type="form">form</button>
+<button bindtap="opentype" data-type="input">input</button>
+<button bindtap="opentype" data-type="label">label</button>
+<button bindtap="opentype" data-type="picker">picker</button>
+<button bindtap="opentype" data-type="textarea">textarea</button>
+</view>

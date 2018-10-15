@@ -1,0 +1,80 @@
+
+<!--index.wxml-->
+<swiper indicator-dots="{{indicatorDots}}"
+  autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+  <block wx:for="{{pt}}">
+    <swiper-item>
+      <image src="{{item.download_url}}" class="slide-image"/>
+    </swiper-item>
+  </block>
+</swiper>
+
+<button bindtap="goTo">跳转案例页面</button>
+<button bindtap="goToTest">跳转测试页面</button>
+<button bindtap='gocity'>城市切换页面</button>
+<button bindtap='gojiaohu'>交互反馈页面</button>
+<view class="body">
+  <view class="nav bc_white">
+    <view class="{{selected?'red':'default'}}" bindtap="selected">系统提醒</view>
+    <view class="{{selected1?'red':'default'}}" bindtap="selected1">优惠活动</view>
+    <!-- <view class='line' style='left:{{lineLeft}}rpx;bottom: 10rpx;'></view> -->
+    <view animation="{{animationData}}" style="width: 100rpx;height: 1rpx;border-bottom: 1px solid red;position:absolute;left:{{lineLeft}}rpx;bottom: 10rpx;"></view>
+  </view>
+  <view class="{{selected?'show':'hidden'}}">
+    <swiper  next-margin='440rpx' previous-margin='0px' catchtap="onItemClick">  
+      <block>  
+          <swiper-item>  
+          <view>
+          <image src="../../images/case.png" class='demo-images' id='1' />
+          </view>
+          </swiper-item>  
+           <swiper-item>  
+          <view>
+          <image src="../../images/case.png" class='demo-images' id='2' />
+          </view>
+          </swiper-item>  
+           <swiper-item>  
+          <view>
+          <image src="../../images/case.png" class='demo-images' id='3' />
+          </view>
+          </swiper-item>  
+           <swiper-item>  
+          <view>
+          <image src="../../images/case.png" class='demo-images' id='4' />
+          </view>
+          </swiper-item>  
+      </block>  
+    </swiper>
+  </view>
+  <!-- <view class="{{selected?'show':'hidden'}}">
+    <swiper  next-margin='440rpx' >  
+      <block wx:for="{{demos}}">  
+          <swiper-item>  
+          <view>
+          <image src="{{item}}" class='demo-images' data-post-id='1' />
+          <view class='demo-text'>  123</view>
+          </view>
+          </swiper-item>  
+      </block>  
+    </swiper>
+  </view> -->
+  <view class="{{selected1?'show':'hidden'}}">
+    <swiper  next-margin='440rpx'>  
+      <block wx:for="{{demos}}">  
+          <swiper-item>  
+          <view>
+          <block> <image src="{{item}}" class='demo-images'  width="355" height="100"/></block>
+          456
+          </view>
+          </swiper-item>  
+        </block>  
+    </swiper>
+  </view>
+</view>
+
+
+
+
+  
+
+

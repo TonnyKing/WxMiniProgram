@@ -1,0 +1,8 @@
+<view >
+    <block wx:for="{{zhihu}}">
+      <view class="banner" >
+          <image src="{{item.images}}"  data-id="{{item.b}}" id='{{item.id}}' bindtap="bindViewTap" class="banner-image" width="100%" height="100%"/>
+          <text class="banner-title">{{item.title}}</text>
+      </view>
+      </block>
+</view>

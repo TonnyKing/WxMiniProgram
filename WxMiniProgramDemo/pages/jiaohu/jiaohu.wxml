@@ -1,0 +1,6 @@
+<!--pages/jiaohu/jiaohu.wxml-->
+<button bindtap="showToast">showToast</button>
+<button bindtap="showLoading">showLoading</button>
+<button bindtap="showModal">showModal</button>
+<button bindtap="showActionSheet">showActionSheet</button>
+{{text}}
